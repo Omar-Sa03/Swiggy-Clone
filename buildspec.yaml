@@ -41,3 +41,7 @@ phases:
       - echo "Build completed successfully!"
       - echo "Running SonarQube analysis result"
       - sonar-scanner -Dsonar.projectKey=swiggy -Dsonar.sources=. -Dsonar.host.url=http://54.211.82.14:9000/ -Dsonar.login=$SONAR_TOKEN
+
+artifacts:
+  files:
+    - appspec.yaml

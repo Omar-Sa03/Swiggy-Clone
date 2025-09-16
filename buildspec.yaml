@@ -40,4 +40,4 @@ phases:
       - trivy image  "$DOCKER_REGISTRY_USERNAME/swiggy:latest" >> trivyimage.txt
       - echo "Build completed successfully!"
       - echo "Running SonarQube analysis result"
-      - sonar-scanner -Dsonar.projectKey=swiggy -Dsonar.sources=. -Dsonar.host.url=http://3.84.190.17:9000/ -Dsonar.login=$SONAR_TOKEN
+      - sonar-scanner -Dsonar.projectKey=swiggy -Dsonar.sources=. -Dsonar.host.url=http://54.211.82.14:9000/ -Dsonar.login=$SONAR_TOKEN
